@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page-width{
+    width: calc(100% - 4rem);
+    padding: 25px 15px;
+    margin: 0 auto;
+}
+/*
+    Navbar styles
+*/
+.navbar{
+
+}
+.nav-con li{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+.nav-con li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -4px;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+.nav-con li:hover{
+    color: #404040;
+}
+.nav-con li:hover::after{
+    color: #404040;
+    transform: scaleX(1);
+}
+.contact-button{
+    width: 30%;
+    height: 100%;
+    right: 10px;
+}
+.contact-button button{
+    width: 8.5rem;
+    height: 40px;
+    background: #404040;
+    color: #ffffff;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+}
+
+.nav-link{
+
+}
+
+
+
+/*
+        Homepage styles
+*/
+
+.home-comp{
+    height: 85vh;
+}
