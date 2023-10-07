@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
+    font-family: Poppins, sans-serif;
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 .page-width{
-    width: calc(100% - 4rem);
+    width: calc(100% - 5rem);
     padding: 25px 15px;
     margin: 0 auto;
 }
@@ -42,6 +46,24 @@ body{
     color: #404040;
     transform: scaleX(1);
 }
+.logo{
+    left: 10px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.logo p{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;align-items: center;
+}
 .contact-button{
     width: 30%;
     height: 100%;
@@ -69,4 +91,204 @@ body{
 
 .home-comp{
     height: 85vh;
+}
+.banner{
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+.profile-image{
+    top: -2rem;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.banner-text{
+    z-index: 2;
+    text-align: center;
+    padding: 5px;
+}
+.banner-text li{
+    padding: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.banner-text li:hover{
+    font-size: 35px;
+    font-weight: bolder;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+.banner-box{
+    background: #f5f5f5;
+    top: 30%;
+    right: -20%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #e5e5e5;
+}
+.text{
+    font-size: 10px;
+}
+.see-more button{
+    padding: 7px 45px;
+    border-radius: 5px;
+    border: none;
+    background: #404040;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+/*
+
+ABout page style
+ */
+.about-container{
+    height: 130vh;
+}
+.about-image{
+    top: 50px;
+    right: 0;
+    margin-left: auto;
+    height: 100%;
+}
+.about-image img{
+    transform: scaleX(-1);
+    border-radius: 5px;
+}
+.about-banner{
+    top: 80px;
+    z-index: 200;
+    width: 50%;
+}.about-banner-text{
+     line-height:85px;
+     font-size: 90px;
+     font-weight: 800;
+     color: #bcbcbc;
+    font-family: Roboto;
+ }
+ .love{
+     line-height: 5px ;
+     color: #404040 }
+.cursive-name{
+    font-size: 30px;
+  /*  font-family: 'Dancing Script', cursive;*/
+    font-family: 'Kaushan Script', cursive;
+    color: #000000;
+}
+.about-footer{
+    background: #404040;
+    margin-top: auto;
+}
+.about-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    margin-top: auto;
+    color: #bcbcbc;
+    width: 31%;
+}
+.social h2{
+    font-weight: 600;
+    width: 80%;
+    padding: 5px 0;
+    border-bottom: solid 1px #bcbcbc;
+}
+.social-links{
+    font-weight: lighter;
+}
+.social-links a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text{
+    margin-top: auto;
+    color: #bcbcbc;
+    width: 31%;
+}
+.social div{
+    padding :10px 0;
+    width: 80%;
+    border-bottom: 1px solid #bcbcbc;
+}
+.fto p{
+    padding-top: 12px;
+}
+.ftt p{
+    font-weight: 600;
+}
+
+
+
+
+/*
+    skills page style
+*/
+.skills-section{
+    height: 100svh;
+}
+.st{
+    height: 50%;
+}
+.sb{
+    height: 50%;
+    background: #404040;
+}
+.sk-con{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: fit-content;
+}
+.skill-banner{
+    background:#f5f5f5 ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #757272;
+}
+.skill-banner-con{
+    padding: 20px;
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-box{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #bcbcbc;
+    opacity: 0;
+}
+.vis{
+    opacity: 1;
+    transition: ease-in;
+}
+.skill-box:hover{
+    scale: 1.1;
+    transition: ease-in-out .3s;
+}
+.skill-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:80% ;
+}
+.skill-header h2{
+    font-size: 30px;
+    padding: 10px;
+}
+.skill-header p{
+    text-align: center;
+    padding: 10px;
 }
