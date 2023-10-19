@@ -50,10 +50,10 @@ const HomeComponent =()=> {
                 </div>
                 <div className="absolute w-80 h-72 p-6 banner-box">
                     <div className="p-5 flex flex-col justify-center items-center">
-                        <p className="font-semibold pb-2 text-xl">
+                        <p className="font-semibold myname pb-2 text-xl">
                             Josiah Idowu
                         </p>
-                        <p className="font-light tracking-widest text-sm">
+                        <p className="font-light mytitle tracking-widest text-sm">
                             Frontend Developer
                         </p>
                     </div>
